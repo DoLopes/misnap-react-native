@@ -35,9 +35,6 @@ buildscript {
         mavenCentral()
         jcenter()
         mavenLocal()
-
-
-
     }
     dependencies {
         classpath("com.android.tools.build:gradle:7.3.1")
@@ -46,4 +43,20 @@ buildscript {
         classpath("org.jetbrains.kotlin:kotlin-serialization:1.7.0")
         classpath('de.undercouch:gradle-download-task:5.0.1')
     }
+}
+
+allprojects {
+  repositories {
+    google()
+    mavenCentral()
+    jcenter()
+    mavenLocal()
+    maven {
+      url "https://maven.pkg.github.com/mitek-systems/misnap-android"
+      credentials {
+        username "username"
+        password "password"
+      }
+    }
+  }
 }

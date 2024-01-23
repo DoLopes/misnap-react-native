@@ -11,7 +11,7 @@
 #import <React/RCTUIManager.h>
 #import <React/RCTLog.h>
 #import "AppDelegate.h"
-#import <MiSnapLicenseManager/MiSnapLicenseManager.h>
+#import <MiSnapCore/MiSnapCore.h>
 #import <MiSnap/MiSnap.h>
 #import <MiSnapUX/MiSnapUX.h>
 
